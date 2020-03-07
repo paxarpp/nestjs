@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='style.css'>
+    <title>Students with Nest</title>
+  </head>
+  <body>
+    <form action='students' method='POST'>
+      <label>Matriculation number: <input type='number' name='matriculationNumber'></label>
+      <label>Name: <input type='text' name='name'></label>
+      <button type='submit'>Save</button>
+    </form>
+
+    <div class='students'>
+      {{#each students}}
+        <div>{{matriculationNumber}}</div>
+        <div>{{name}}</div>
+      {{/each}}
+    </div>
+  </body>
+</html>
