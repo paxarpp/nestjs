@@ -7,7 +7,8 @@ import { BlogModule } from './blog/blog.module';
 @Module({
   imports: [
     // forRoot() для подключения к базе данных
-    MongooseModule.forRoot('mongodb://localhost/nest-blog', { useNewUrlParser: true }),
+    // mongoose в docker
+    MongooseModule.forRoot('mongodb://localhost:32769', { useNewUrlParser: true }),
     BlogModule
   ],
   controllers: [AppController],
