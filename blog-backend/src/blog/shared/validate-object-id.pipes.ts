@@ -1,7 +1,6 @@
 import { PipeTransform, Injectable, ArgumentMetadata, BadRequestException } from '@nestjs/common';
 import * as mongoose from 'mongoose';
 
-
 // любой HTTP-запрос от внешнего интерфейса этого приложения,
 // postID которого не найден в базе данных, будет считаться недействительным.
 @Injectable()
